@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join the Storytelling Competition 2024 at Cambridge English for Life Betaria Seremban! Register now to compete and win exciting prizes.">
+    <title>Storytelling Competition 2024</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Lobster&display=swap" rel="stylesheet">
+
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #FF8C00, #F1C40F);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
+            color: #333;
+            line-height: 1.6;
+            padding: 0;
+            margin: 0;
+            transition: all 0.3s ease-in-out;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h1, h2, h3, p {
+            text-align: center;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(135deg, #FF5733, #FF8C00);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            border-bottom-left-radius: 80px;
+            border-bottom-right-radius: 80px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-family: 'Lobster', cursive;
+            font-size: 4rem;
+            margin-bottom: 20px;
+            animation: bounceIn 1.5s ease-in-out;
+        }
+
+        header p {
+            font-size: 1.6rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #FAD02E;
+            text-align: center;
+            padding: 100px 20px;
+            border-radius: 40px;
+            margin-top: -40px;
+            position: relative;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero h2 {
+            font-family: 'Lobster', cursive;
+            font-size: 3.5rem;
+            color: #FF5733;
+            animation: popIn 1s ease-in-out;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.4rem;
+            color: #333;
+            animation: fadeIn 1.5s ease-in-out;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            padding: 20px 40px;
+            background-color: #FF5733;
+            color: white;
+            font-size: 1.6rem;
+            font-weight: bold;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-block;
+            animation: shake 2s infinite;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .btn:hover {
+            background-color: #FF4500;
+            transform: scale(1.1);
+            animation: btnBounce 0.5s ease-in-out infinite;
+        }
+
+        @keyframes btnBounce {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+
+        /* Event Details Section */
+        .event-details {
+            text-align: center;
+            padding: 50px 20px;
+            max-width: 900px;
+            margin: 50px auto;
+            background-color: #FFF4A3;
+            border-radius: 30px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1;
+        }
+
+        .event-details h3 {
+            font-size: 3.5rem;
+            color: #FF5733;
+            margin-bottom: 25px;
+            animation: zoomIn 1.5s ease-in-out;
+        }
+
+        .event-details p {
+            font-size: 1.4rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .event-details a {
+            color: #FF5733;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 1.5rem;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .event-details a:hover {
+            color: #E74C3C;
+            text-decoration: underline;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: #FF8C00;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            border-radius: 25px;
+            margin-top: 50px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact h3 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+        }
+
+        .contact p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .contact .phone-number {
+            display: inline-block;
+            padding: 15px 40px;
+            background-color: #FF5733;
+            color: white;
+            font-size: 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .contact .phone-number:hover {
+            background-color: #E74C3C;
+            transform: scale(1.1);
+        }
+
+        /* Terms and Conditions Section */
+        .terms {
+            background-color: #F1C40F;
+            padding: 40px 20px;
+            text-align: left;
+            border-radius: 20px;
+            margin-top: 50px;
+            max-width: 900px;
+            margin: 50px auto;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .terms h3 {
+            font-size: 2.5rem;
+            color: #FF5733;
+            margin-bottom: 15px;
+        }
+
+        .terms p {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .terms ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        .terms li {
+            margin-bottom: 10px;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #2C3E50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Fun Animations */
+        @keyframes bounceIn {
+            0% { opacity: 0; transform: translateY(-100px); }
+            60% { opacity: 1; transform: translateY(30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes popIn {
+            0% { opacity: 0; transform: scale(0.5); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes shake {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-10px); }
+            50% { transform: translateX(10px); }
+            75% { transform: translateX(-10px); }
+            100% { transform: translateX(0); }
+        }
+
+        @keyframes zoomIn {
+            0% { opacity: 0; transform: scale(0.5); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+
+        /* Responsive Layout */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.8rem;
+            }
+
+            .hero h2 {
+                font-size: 2.8rem;
+            }
+
+            .event-details h3 {
+                font-size: 2.5rem;
+            }
+
+            .terms h3 {
+                font-size: 2rem;
+            }
+
+            .contact h3 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>✨ Storytelling Competition 2024 ✨</h1>
+    <p>Calling All Young Storytellers (Ages 7-12)! Join Us for a Fun Adventure!</p>
+</header>
+
+<div class="hero">
+    <h2>🎉 Exciting English Storytelling Competition at Cambridge English For Life Betaria Seremban!</h2>
+    <p>🗓️ Date: 8 December 2024 | 🕒 Last Registration Date: 3 December 2024</p>
+    <p>📍 Location: Cambridge English For Life Betaria Centre (near Centrepoint)</p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSccQICTStTxT6DgQRcWVZ7gfFzc5bMyPxheCyaGJCDMHulang/viewform?usp=sf_link" class="btn">Register Now & Join the Fun! 🥳✨</a>
+</div>
+
+<div class="event-details">
+    <h3>How to Participate</h3>
+    <p>To participate in the competition, fill out the registration form and submit your story before the deadline! 🎉</p>
+    <p>Get ready to share your creativity and imagination! 🖋️✨</p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSccQICTStTxT6DgQRcWVZ7gfFzc5bMyPxheCyaGJCDMHulang/viewform?usp=sf_link">Fill out the Registration Form</a>
+</div>
+
+<div class="terms">
+    <h3>Terms and Conditions</h3>
+    <ul>
+        <li><strong>Participation:</strong>
+            <ul>
+                <li>This competition is open to children aged 7 until 12 years old.</li>
+                <li>Participants must register and pay a registration fee of RM10 before December 3, 2024.</li>
+                <li>No refunds will be issued for cancellations after the registration deadline.</li>
+            </ul>
+        </li>
+        <li><strong>Competition Rules:</strong>
+            <ul>
+                <li>Participants must tell a story within the specified time limit (5-15min).</li>
+                <li>Stories can be original or adapted from existing tales.</li>
+                <li>Participants may use props or costumes to enhance their performance.</li>
+                <li>The competition will be recorded, and the recordings may be used for promotional purposes.</li>
+            </ul>
+        </li>
+        <li><strong>Judging Criteria:</strong>
+            <ul>
+                <li>Creativity and originality</li>
+                <li>Storytelling skills (voice modulation, expression, and engagement)</li>
+                <li>Superpower theme</li>
+                <li>Overall performance</li>
+            </ul>
+        </li>
+        <li><strong>Prizes:</strong> There is a prize for every level and certificates of participation are provided.</li>
+        <li><strong>Intellectual Property:</strong> By participating, participants grant the organizers the right to use their recorded performances for promotional and archival purposes.</li>
+        <li><strong>Liability:</strong>
+            <ul>
+                <li>The organizers are not responsible for any accidents, injuries, or losses incurred by participants during the competition.</li>
+                <li>Participants are responsible for their own safety and well-being.</li>
+            </ul>
+        </li>
+        <li><strong>Changes to Terms and Conditions:</strong> The organizers reserve the right to modify or amend these terms and conditions at any time without prior notice.</li>
+    </ul>
+    <p>By participating in this competition, you agree to abide by these terms and conditions.</p>
+</div>
+
+<!-- Contact Section -->
+<div class="contact">
+    <h3>Need Help? Contact Us!</h3>
+    <p>For inquiries or assistance, feel free to reach out to us:</p>
+    <a href="tel:+60162792175" class="phone-number">Whatsapp: 016-279 2175 (Admin)</a>
+</div>
+
+<footer>
+    <p>&copy; 2024 Storytelling Competition. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
